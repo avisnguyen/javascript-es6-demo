@@ -1,0 +1,132 @@
+1. Introduction
+	ES6.2015 ES7.2016 ES8.2017
+
+2. Template Literals
+a='AB',b='CD'
+'${a} ${b}' = 'AB CD'
+ 
+a=2,b=3
+'${a+b}' == '5'
+
+3. Destructuring object
+const pInf = {
+	name: a,
+	age: b,
+	job: c}
+const {name: n, age: a} = pInf
+	  => n = a;  a = b;
+
+4. Destructuring Arrays
+let [firstName, lastName] = ['A', 'B']
+lastName = 'C'
+=> lastName == 'C'
+
+5. Object Literal
+Using params to declare property of object in method 
+
+6. Object Literal (Challenge)
+Using object as agument
+
+7. For of Loop
+for (const arrName of arrName)
+{inblock: arrName -> a member of Array}
+
+for (char of String) {/doSomething/}
+
+
+8. For of Loop (Challenge)
+for (let arrName of arrName) {}
+outblock: arrName -> is a Array
+
+9. Spread Operator
+example1[a,n,y] == example2[...example1]
+
+10. Rest Operator
+function A(...arguments) {
+=> arguments == arrayArgument
+}
+
+11. Arrow Functioms
+function add(...nums) {
+	let total = nums.reduce((x,y) => x + y);
+	console.log(total);
+}
+
+add(1,2,3,4) == 10;
+
+12. Default Params
+Default values will be used if have no argument
+
+13. Includes()
+if array has a -> array.includes(a) == true
+else array.include(a) == false
+
+14. Let and Const
+if (false) {
+	var example = 5;
+}
+outblock: example = null
+if {let example} -> err
+- can't change value of const variable
+- but can change const array and const object
+
+15. Import & Export
+export const data = []; //export.js
+import {data} from '/export.js';
+let receiveData = data;
+
+16. padStart() & padEnd()
+str='BCD';
+str.padStart(6, 'A') == 'AAABCD'
+str.padEnd(6, 'A') == 'BCDAAA'
+
+
+17. padStart() and padEnd() (Challenge)
+str.length() >= 1st arg
+
+18. class A {
+	constructor(property1, property2,..) {}
+	(get) method1() {}
+	static method2() {}
+}
+
+class B extendeds A {
+	constructor(property1, property2,..)
+	{
+	 super(p1,p2) //Call super constructor
+	}
+	(get) method1() {#Overide method}
+}
+
+19. Trailing Commas
+No problems
+
+
+20, 21. Asyns & Await - Unstandable
+
+22. Sets
+aset = new Set(Array)
+Same members are groupted
+Set add()
+boolean delete()
+int size()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
