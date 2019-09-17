@@ -41,10 +41,11 @@ outblock: arrName -> is a Array
 9. Spread Operator
 example1[a,n,y] == example2[...example1]
 
-10. Rest Operator
-function A(...arguments) {
-=> arguments == arrayArgument
+10. Rest Operators (Parameters)
+function A(...params) {
+=> params == arrayArgument
 }
+A(1,2,3,4,...)
 
 11. Arrow Functioms
 function add(...nums) {
@@ -111,8 +112,33 @@ Set add()
 boolean delete()
 int size()
 
+23. Functions
+function function_Name(param1,...) {
+	//Statement
+	//
+	return value; //Must last line and has only one return values
+}
 
+//Function Contrucstor
+var variableName = new Function(Param1, Param2,.."Function Body");
+Ex:
+var multi = new Function("x", "y", "return x*y;");
+result = multi(10,3);
+result == 30;
 
+//Recursion Function
+
+//Recursion expression
+(function() { 
+   var msg = "Hello World" 
+   console.log(msg)
+})()
+
+//Lambda function
+var x = 'hi '
+var y = 'bao'
+var msg = (a,b) => console.log(x+y);
+msg(x,y); //"hi bao"
 
 
 
